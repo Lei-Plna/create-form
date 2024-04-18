@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>create-form</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="form-container">
+        <h1>新用户注册表单</h1>
+        <div class="form-element">
+          <!-- @todo 后续是否将required的红星加上 -->
+          <div class="required"></div>
+          <div class="warn"></div>
+          <label for="realname">realname</label>
+          <input type="text" id="realname" name="realname" />
+        </div>
+        <div class="form-element">
+          <!-- @todo 后续是否将required的红星加上 -->
+          <div class="required"></div>
+          <div class="warn"></div>
+          <label for="gender">gender</label>
+          <span class="radio-container">
+            <input type="radio" id="gender" name="gender" value="male" />男
+          </span>
+          <span class="radio-container">
+            <input type="radio" id="gender" name="gender" value="female" />女
+          </span>
+        </div>
+        <div class="form-element">
+          <!-- @todo 后续是否将required的红星加上 -->
+          <div class="required"></div>
+          <div class="warn"></div>
+          <label>occupation</label>
+          <select id="occupation" name="occupation">
+            <option value="frontend">frontend</option>
+            <option value="backend">backend</option>
+            <option value="maintain">maintain</option>
+            <option value="network">network</option>
+          </select>
+        </div>
+        <div class="form-element">
+          <!-- @todo 后续是否将required的红星加上 -->
+          <div class="required"></div>
+          <div class="warn"></div>
+          <label>hobby</label>
+          <input
+            id="hobby"
+            name="hobby"
+            type="checkbox"
+            value="swimming"
+          />swimming
+          <input
+            id="hobby"
+            name="hobby"
+            type="checkbox"
+            value="running"
+          />running
+          <input
+            id="hobby"
+            name="hobby"
+            type="checkbox"
+            value="reading"
+          />reading
+          <input id="hobby" name="hobby" type="checkbox" value="coding" />coding
+        </div>
+        <div class="form-element">
+          <!-- @todo 后续是否将required的红星加上 -->
+          <div class="required"></div>
+          <div class="warn"></div>
+          <div class="textarea-container">
+            <label for="introduce">hobby</label>
+            <textarea id="introduce" name="introduce"></textarea>
+          </div>
+        </div>
+        <footer class="form-footer">
+          <button class="submit" id="submit" type="submit">提交</button>
+        </footer>
+      </form>
+    </div>
+    <script type="module" src="./src/index.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form-container {
+  padding: 0 10px;
+  box-sizing: border-box;
+  & > h1 {
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+
+  .form-element {
+    padding: 14px 0;
+    &>.textarea-container {
+      display: flex;
+      align-items: flex-start;
+
+      label {
+        margin-right: 5px;
+      }
+    }
+  }
+}
