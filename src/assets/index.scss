@@ -5,8 +5,10 @@ body {
 }
 
 .form-container {
+  width: 500px;
   padding: 0 10px;
   box-sizing: border-box;
+
   & > h1 {
     font-size: 1.5rem;
     font-weight: normal;
@@ -14,13 +16,24 @@ body {
 
   .form-element {
     padding: 14px 0;
-    &>.textarea-container {
+
+    label {
+      display: inline-block;
+      width: 100px;
+    }
+
+    & > .textarea-container {
       display: flex;
       align-items: flex-start;
+    }
 
-      label {
-        margin-right: 5px;
-      }
+    .warn {
+      color: red;
+    }
+
+    .fa-check {
+      display: none;
+      color: green;
     }
   }
 }
